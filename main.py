@@ -5,10 +5,11 @@ from random import randint
 t = Turtle()
 t.shape("arrow")
 t.color("green")
-t.width(2)
+t.pensize(12)
+t.speed("fast")
 
 screen = Screen()
-screen.bgcolor("#F2EFDE")
+screen.bgcolor("#0a0a0a")
 
 # Generate random custom colours --start
 color = []
@@ -18,8 +19,6 @@ for i in range(n):
 # Generate random custom colours --end
 
 direction = [0, 90, 180, 270]
-turtle_movement = random.randint(0, 100)
-turtle_angle = random.randint(0, 360)
 
 for number in range(200):
     t.color(random.choice(color))
